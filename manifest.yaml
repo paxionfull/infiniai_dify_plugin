@@ -8,10 +8,10 @@ label:
   zh_Hans: infiniai
   pt_BR: infiniai
 description:
-  en_US: InfiniAI provides access to a variety of LLM models.
-  ja_JP: InfiniAIは、様々なLLMモデルへのアクセスを提供します。
-  zh_Hans: 无问芯穹提供多种大语言模型的访问服务。
-  pt_BR: InfiniAI fornece acesso a uma variedade de modelos LLM.
+  en_US: InfiniAI provides access to a variety of large language models, such as GPT-4o, Deepseek-R1, and the Qwen series.
+  ja_JP: InfiniAIは、GPT-4o、Deepseek-R1、Qwenシリーズなど、さまざまな大規模言語モデルへのアクセスを提供します。
+  zh_Hans: 无问芯穹提供多种大语言模型的访问服务，例如GPT-4o、Deepseek-R1、Qwen系列。
+  pt_BR: InfiniAI fornece acesso a uma variedade de modelos de linguagem grande, como GPT-4o, Deepseek-R1 e a série Qwen.
 icon: icon.svg
 resource:
   memory: 268435456

@@ -1,6 +1,6 @@
-## infiniai
+## 无问芯穹
 
-**Author:** yaozhuyu
+**Author:** infiniai
 **Version:** 0.0.1
 **Type:** model
 
