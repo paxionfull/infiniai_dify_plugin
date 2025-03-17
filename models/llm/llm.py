@@ -113,12 +113,21 @@ class InfiniaiLargeLanguageModel(LargeLanguageModel):
                                 break
                             if line.startswith(b"data: "):
                                 data = json.loads(line.decode("utf-8").replace("data: ", ""))
+                                
+                                # 添加数组长度检查，避免索引错误
+                                if not data.get("choices") or len(data["choices"]) == 0:
+                                    continue
+                                
                                 if data["choices"][0]["finish_reason"] is not None:
                                     break
                                 
                                 # 创建 AssistantPromptMessage
+                                content = ""
+                                if "delta" in data["choices"][0] and "content" in data["choices"][0]["delta"]:
+                                    content = data["choices"][0]["delta"].get("content", "")
+                                
                                 message = AssistantPromptMessage(
-                                    content=data["choices"][0]["delta"].get("content", "")
+                                    content=content
                                 )
                                 
                                 # 创建 LLMUsage
@@ -136,7 +145,7 @@ class InfiniaiLargeLanguageModel(LargeLanguageModel):
                                 yield LLMResultChunk(
                                     model=model,
                                     prompt_messages=prompt_messages,
-                                    system_fingerprint=None,
+                                    system_fingerprint=data.get("system_fingerprint"),
                                     delta=delta
                                 )
                                 
