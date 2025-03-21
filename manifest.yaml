@@ -1,17 +1,18 @@
 version: 0.0.1
 type: plugin
-author: paxionfull
+author: langgenius
 name: infiniai
 label:
-  en_US: infiniai
-  ja_JP: infiniai
-  zh_Hans: infiniai
-  pt_BR: infiniai
+  en_US: 无问芯穹
+  ja_JP: 无问芯穹
+  zh_Hans: 无问芯穹
+  pt_BR: 无问芯穹
 description:
-  en_US: InfiniAI provides access to a variety of large language models, such as GPT-4o, Deepseek-R1, and the Qwen series.
-  ja_JP: InfiniAIは、GPT-4o、Deepseek-R1、Qwenシリーズなど、さまざまな大規模言語モデルへのアクセスを提供します。
-  zh_Hans: 无问芯穹提供多种大语言模型的访问服务，例如GPT-4o、Deepseek-R1、Qwen系列。
-  pt_BR: InfiniAI fornece acesso a uma variedade de modelos de linguagem grande, como GPT-4o, Deepseek-R1 e a série Qwen.
+  en_US: InfiniAI provides high-performance APIs for accelerating large model inference, covering multiple modalities such as text, images, and videos. It supports the latest open-source LLM models like DeepSeek, as well as SOTA embedding and reranking models such as Jina/bge. Configuration can be done via model names, API keys, and other parameters.
+  ja_JP: InfiniAIは、テキスト、画像、動画などの多様なモダリティをカバーする大規模モデル推論高速化のための高性能APIを提供します。DeepSeekなどの最新オープンソースLLMモデルや、Jina/bgeなどのSOTA埋め込み・再ランキングモデルをサポートし、モデル名、APIキー、その他のパラメータで設定できます。
+  zh_Hans: 无问芯穹提供大模型推理加速高性能API，涵盖文本、图像、视频等多种模态，支持最新开源DeepSeek等系列LLM模型，以及Jina/bge等sota嵌入重排模型，可通过模型名称、API密钥和其他参数进行配置。
+  pt_BR: InfiniAI fornece APIs de alto desempenho para acelerar a inferência de modelos grandes, abrangendo várias modalidades, como texto, imagens e vídeos. Ele suporta os mais recentes modelos LLM de código aberto, como DeepSeek, bem como modelos SOTA de incorporação e reclassificação, como Jina/bge. A configuração pode ser feita por meio de nomes de modelos, chaves de API e outros parâmetros.
+  
 icon: icon.svg
 resource:
   memory: 268435456

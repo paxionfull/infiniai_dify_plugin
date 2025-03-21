@@ -1,10 +1,10 @@
 provider: infiniai
-author: paxionfull
+author: langgenius
 label:
-  en_US: Infiniai
+  en_US: InfiniAI
 description:
-  en_US: Models provided by infiniai.
-  zh_Hans: Infiniai 提供的模型。
+  en_US: Models provided by InfiniAI.
+  zh_Hans: InfiniAI 提供的模型。
 icon_small:
   en_US: icon_s_en.svg
 icon_large:
@@ -12,8 +12,8 @@ icon_large:
 background: "#E5E7EB"
 help:
   title:
-    en_US: Get your API Key from infiniai
-    zh_Hans: 从 Infiniai 获取 API Key
+    en_US: Get your API Key from InfiniAI
+    zh_Hans: 从 InfiniAI 获取 API Key
   url:
     en_US: https://cloud.infini-ai.com/genstudio/model?deepsearch
 supported_model_types:
