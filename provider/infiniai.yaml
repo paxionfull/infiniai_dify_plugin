@@ -1,5 +1,4 @@
 provider: infiniai
-author: langgenius
 label:
   en_US: InfiniAI
 description:
@@ -18,6 +17,11 @@ help:
     en_US: https://cloud.infini-ai.com/genstudio/model?deepsearch
 supported_model_types:
   - llm
+  - text-embedding
+  - rerank
+  - tts
+  - speech2text
+  - moderation
 configurate_methods:
   - predefined-model
   - customizable-model
@@ -52,8 +56,22 @@ models:
   llm:
     predefined:
       - "models/llm/*.yaml"
+  rerank:
+    predefined:
+      - "models/rerank/*.yaml"
+  speech2text:
+    predefined:
+      - "models/speech2text/*.yaml"
+  text_embedding:
+    predefined:
+      - "models/text_embedding/*.yaml"
+  tts:
+    predefined:
+      - "models/tts/*.yaml"
 extra:
   python:
     provider_source: provider/infiniai.py
     model_sources:
       - "models/llm/llm.py"
+      - "models/text_embedding/text_embedding.py"
+      - "models/rerank/rerank.py"
