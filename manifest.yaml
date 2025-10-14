@@ -1,6 +1,6 @@
-version: 0.0.3
+version: 0.0.4
 type: plugin
-author: langgenius
+author: infiniai
 name: infiniai
 label:
   en_US: 无问芯穹
